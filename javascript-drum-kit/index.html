@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="index.js"></script>
+    <link href="index.css" rel="stylesheet" />
+    <title>Drum Kit</title>
+  </head>
+  <body>
+    <div class="drumpads">
+      <div data-key="65" class="drumpad pad">
+        <!--  Keyboard input -->
+        <kbd>A</kbd>
+        <span class="sound">clap</span>
+      </div>
+      <div data-key="83" class="drumpad">
+        <kbd>S</kbd>
+        <span class="sound">hihat</span>
+      </div>
+      <div data-key="68" class="drumpad">
+        <kbd>D</kbd>
+        <span class="sound">kick</span>
+      </div>
+    </div>
+    <audio data-key="65" src="sounds/clap.wav"></audio>
+    <audio data-key="83" src="sounds/hihat.wav"></audio>
+    <audio data-key="68" src="sounds/kick.wav"></audio>
+  </body>
+</html>
